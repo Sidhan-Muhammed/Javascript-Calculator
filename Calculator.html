@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="./Calculator.css">
+  <script type="text/javascript" src="./Calculator.js"></script>
+
+  <title>Calculator | Sidhan Muhammed | My Project</title>
+</head>
+<body>
+
+
+<div id="mainDiv">
+
+  <h4>Calculator</h4>
+
+    <div id="div1" class="mb-3">
+      <input type="text" id="output" class="text-right p-2">
+    </div>
+
+  <div id="div2" class="container-fluid mt-4">
+
+   <div class="row my-3">
+    <div class="col-6">
+       <input type="button" class="btn btn-outline-light" value="CLR" onclick="clr()">
+    </div>
+    <div class="col-6">
+       <input type="button" class="btn btn-outline-light" value="DEL" onclick="del()">
+    </div>
+  </div>
+
+  <div class="row my-3">
+    <div class="col-3">
+      <input type="button" class="btn btn-outline-light" value="1" onclick="display('1')" name="1">
+    </div>
+    <div class="col-3">
+      <input type="button" class="btn btn-outline-light" value="2" onclick="display('2')" name="2">
+    </div>
+    <div class="col-3">
+      <input type="button" class="btn btn-outline-light" value="3" onclick="display('3')" name="3">
+    </div>
+    <div class="col-3">
+      <input type="button" class="btn btn-outline-light" value="+" onclick="display('+')" name="+">
+    </div>
+  </div>
+
+  <div class="row my-3">
+    <div class="col-3">
+      <input type="button" class="btn btn-outline-light" value="4" onclick="display('4')" name="4">
+    </div>
+    <div class="col-3">
+      <input type="button" class="btn btn-outline-light" value="5" onclick="display('5')" name="5">
+    </div>
+    <div class="col-3">
+      <input type="button" class="btn btn-outline-light" value="6" onclick="display('6')" name="6">
+    </div>
+    <div class="col-3">
+      <input type="button" class="btn btn-outline-light" value="-" onclick="display('-')" name="-">
+    </div>
+  </div>
+
+  <div class="row my-3">
+    <div class="col-3">
+      <input type="button" class="btn btn-outline-light" value="7" onclick="display('7')" name="7">
+    </div>
+    <div class="col-3">
+      <input type="button" class="btn btn-outline-light" value="8" onclick="display('8')" name="8">
+    </div>
+    <div class="col-3">
+      <input type="button" class="btn btn-outline-light" value="9" onclick="display('9')" name="9">
+    </div>
+    <div class="col-3">
+      <input type="button" class="btn btn-outline-light" value="*" onclick="display('*')" name="*">
+    </div>
+  </div>
+
+  <div class="row my-3">
+    <div class="col-3">
+      <input type="button" class="btn btn-outline-light" value="0" onclick="display('0')" name="0">
+    </div>
+    <div class="col-6">
+      <input type="button" class="btn btn-outline-light" value="=" onclick="result()">
+    </div>
+    <div class="col-3">
+      <input type="button" class="btn btn-outline-light" value="/" onclick="display('/')" name="/">
+    </div>
+  </div>
+
+ </div>
+</div>
+
+</body>
+</html>
